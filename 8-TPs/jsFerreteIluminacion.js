@@ -8,20 +8,128 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  ”Usted pago X de IIBB.”, siendo X el impuesto que se pagó. 
 
  */
-function CalcularPrecio () 
-
+ function CalcularPrecio()
 {
-    var lamparas;
-    var precio;
+	var cantidadDeLamparas;
+	var marca;
+	var precioBruto;
+	var descuento;
+	var precioFinal;
 
-        lamparas=document.getElementById('Cantidad').value;
-        
-        if(Cantidad >5)
-        {
-         precio = 35*50/100;
-         document.getElementById('precioDescuento').value= precio * lamparas;
-        }
 
-        
-    
+	
+	cantidadDeLamparas=parseInt(cantidadDeLamparas);
+    marca = document.getElementById('Marca').value;
+	cantidadDeLamparas=document.getElementById('Cantidad').value;
+	precioBruto = cantidadDeLamparas=35;
+
+	console.log(precioDescuento);
+
+	//descuento=0;
+
+	switch(cantidadDeLamparas)
+	{
+		case 5:
+			descuento=40;	
+
+			break;
+		case 4:
+			switch(marca)
+			{
+
+				case "ArgentinaLuz":
+				case "FelipeLamparas":
+					precioDescuento=25;
+					break;
+				default:
+					precioDescuento=20;	
+
+			}
+
+			break;
+		case 3:
+			switch(marca)
+			{
+
+				case "ArgentinaLuz":
+					precioDescuento=15;
+					break;
+				case "FelipeLamparas":
+					precioDescuento=10;
+					break;
+				default:
+					precioDescuento=5;	
+
+			}
+			break;
+		case 1:
+		case 2:
+			descuento=0;
+			break;
+		default:
+			descuento=50;	
+
+	}
+
+
+
+
+	if (cantidad >5)
+	{	
+		descuento=50;
+	}else
+	{
+		if (cantidad==5)
+		{
+			switch(marca)
+			{
+
+				case "ArgentinaLuz":
+				case "FelipeLamparas":
+					precioDescuento=25;
+					break;
+				default:
+					precioDescuento=20;	
+
+			}
+		}else
+		{
+			if (cantidad==4)
+			{
+				if (marca=="ArgentinaLuz" || marca=="FelipeLamparas")
+				{
+					precioDescuento=25;
+				}else
+				{
+					precioDescuento=20;
+				}
+			}else
+			{
+				if(cantidad==3)
+				{
+					if(marca=="ArgentinaLuz")
+					{
+						precioDescuento=15;
+					}else
+					{
+						if(marca=="FelipeLamparas")
+						{
+							precioDescuento=10;
+						}else
+						{
+							precioDescuento=5;
+						}
+					}
+				}//if (cantidad==3)
+			}//if (cantidad==4)
+		}//if (cantidad==5)
+	}//if (cantidad >5)
+
+	
+
+	
+
 }
+        
+
+
