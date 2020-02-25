@@ -8,4 +8,6 @@ function mostrar()
 
 	console.log(random);
 
+
+
 }//FIN DE LA FUNCIÓN

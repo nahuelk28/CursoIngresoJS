@@ -9,19 +9,13 @@ var mesDelAño = document.getElementById('mes').value;
 	case"Agosto" :
 	    alert("Abrigate que hace frio.")
 	    break;
-	case"Septiembre" :
-	case"Octubre" :
-	case"Noviembre" :
-	case"Enero" :
-	case"Febrero" :
-	case"Marzo" :
-	    alert("Ya pasamos el frio, ahora que calor!!!")
-	    break;
 	case"Abril" :
 	case"Mayo" :
 	case"Junio" :
 	    alert("Falta para el invierno.")
 	    break;
+    default:
+    	alert("verano")
   }
 
 

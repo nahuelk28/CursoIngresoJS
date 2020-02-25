@@ -1,18 +1,17 @@
 function mostrar()
 {
 
-	var contador=0;
+	//var contador=0;
 	var positivo=0;
 	var negativo=1;
 	var numeroIngresado;
 
 
-	var respuesta='si';
-	while(repuesta =="si")
-
-		numeroIngresado=pormt("ingrese un numero: ");
+	while (numeroIngresado != 0)
+	{
+		numeroIngresado=prompt("ingrese un numero; si ingresa 0, se termina la carga ");
 		numeroIngresado=parseInt(numeroIngresado);
-		contador = contador+1;
+		//contador = contador+1;
 
 		if(numeroIngresado>0)
 		{
@@ -20,8 +19,13 @@ function mostrar()
 		}
 		if(numeroIngresado<0)
 		{
-			negativo=negativo*numeroIngresado
-		}
+			negativo=negativo*numeroIngresado;
+
+		 }
+		
+
+
+	}
 
 
 

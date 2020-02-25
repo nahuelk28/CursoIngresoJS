@@ -10,7 +10,8 @@ function mostrar()
   if(!(edad <18 && (estadoCivil != soltero)))
   {
   	alert("nada")  //ESTA MAL
-  }else
+  }
+  else
   {
   	if(edad >18 && (estadoCivil == soltero))
   	{

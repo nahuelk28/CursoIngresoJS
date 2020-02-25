@@ -17,7 +17,7 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
 	var precioFinal;
 
 
-	
+	document.getElementById('Cantidad').value = 91;
 
     marca = document.getElementById('Marca').value;
 	cantidadDeLamparas=document.getElementById('Cantidad').value;

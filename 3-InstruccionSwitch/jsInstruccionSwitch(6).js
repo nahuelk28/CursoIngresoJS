@@ -12,7 +12,6 @@ var laHora = document.getElementById('hora').value;
 		case"11" :
 			alert("es de mañana")
 			break;
-		
 		case"20" :
 		case"21" :
 		case"22" :

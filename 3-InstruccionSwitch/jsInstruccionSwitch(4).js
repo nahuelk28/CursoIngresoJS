@@ -15,13 +15,7 @@ var mesDelAño = document.getElementById('mes').value;
 		case"Noviembre" :
 			alert("tiene 30 dìas")
 			break;
-		case"Enero" :
-		case"Marzo" :
-		case"Mayo" :
-		case"Julio" :
-		case"Agosto" :
-		case"Octubre" :
-		case"Diciembre" :
+		default:
 			alert("tiene 31 dìas")
 	}
 	

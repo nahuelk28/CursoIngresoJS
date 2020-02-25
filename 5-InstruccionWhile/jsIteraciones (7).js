@@ -6,7 +6,7 @@ function mostrar()
 	var respuesta='si';
 	var numeroIngresado;
 
-	while(repuesta=="si")
+	while(respuesta=="si")
 	{
 		numeroIngresado=prompt("ingrese un numero");
 		numeroIngresado=parseInt(numeroIngresado);

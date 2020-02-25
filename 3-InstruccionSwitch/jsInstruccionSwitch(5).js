@@ -13,6 +13,8 @@ var laHora = document.getElementById('hora').value;
 		case"11" :
 			alert("es de mañana")
 			break;
+		default:
+			alert("no es de mañana")
 		
 	}
 	
